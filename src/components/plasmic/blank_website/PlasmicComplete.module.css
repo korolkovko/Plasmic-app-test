@@ -1,0 +1,122 @@
+.root {
+  display: grid;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  align-content: flex-start;
+  justify-items: center;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+  min-height: 0;
+  grid-template-columns:
+    var(--plsmc-viewport-gap) 1fr minmax(0, var(--plsmc-wide-chunk))
+    min(
+      var(--plsmc-standard-width),
+      calc(100% - var(--plsmc-viewport-gap) - var(--plsmc-viewport-gap))
+    )
+    minmax(0, var(--plsmc-wide-chunk)) 1fr var(--plsmc-viewport-gap);
+}
+.root > * {
+  grid-column: 4;
+}
+.complete {
+  background: rgba(255, 255, 255, 1);
+  width: 1440px;
+  height: 1024px;
+  display: block;
+  overflow: hidden;
+}
+.mainContent {
+  transform: translate(0px, -0.5px);
+  width: 634px;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 419px;
+  left: 403px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.tableTitleHuge {
+  background: rgba(255, 255, 255, 1);
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.tableHeader {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+  row-gap: 5px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 24px 16px 4px;
+}
+.header {
+  display: block;
+  font-size: 28px;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 100%;
+  color: rgba(0, 0, 0, 1);
+  align-self: stretch;
+  position: relative;
+}
+.emoji {
+  display: block;
+  font-size: 40px;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 100%;
+  color: rgba(0, 0, 0, 1);
+  align-self: stretch;
+  position: relative;
+}
+.textField {
+  background: rgba(255, 255, 255, 1);
+  height: 66px;
+  display: block;
+  position: relative;
+  align-self: stretch;
+  flex-shrink: 0;
+}
+.continueButton {
+  background: rgba(255, 0, 0, 1);
+  width: 200px;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 8px;
+  left: 217px;
+  flex-direction: row;
+  column-gap: 8px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  padding: 13.5px 13px;
+}
+.textButton {
+  display: block;
+  flex-grow: 1;
+  font-size: 17px;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 1.350000023841858;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+}

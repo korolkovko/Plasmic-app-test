@@ -1,0 +1,421 @@
+.root {
+  display: grid;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  align-content: flex-start;
+  justify-items: center;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+  min-height: 0;
+  grid-template-columns:
+    var(--plsmc-viewport-gap) 1fr minmax(0, var(--plsmc-wide-chunk))
+    min(
+      var(--plsmc-standard-width),
+      calc(100% - var(--plsmc-viewport-gap) - var(--plsmc-viewport-gap))
+    )
+    minmax(0, var(--plsmc-wide-chunk)) 1fr var(--plsmc-viewport-gap);
+}
+.root > * {
+  grid-column: 4;
+}
+.addItem {
+  background: rgba(255, 255, 255, 1);
+  width: 1440px;
+  height: 1024px;
+  display: block;
+  overflow: hidden;
+  padding-left: 226px;
+}
+.header {
+  width: 602px;
+  height: 98px;
+  display: flex;
+  position: absolute;
+  top: 88px;
+  left: 419px;
+  flex-direction: column;
+  row-gap: 13px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.emoji {
+  display: block;
+  font-size: 48px;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 100%;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+}
+.subtitle {
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 100%;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+}
+.mainContent {
+  transform: translate(0px, -0.5px);
+  width: 630px;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 275px;
+  left: 405px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tableTitleHuge {
+  background: rgba(255, 255, 255, 1);
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.tableHeader {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 24px 16px 4px;
+}
+.addNewMenuItem {
+  display: block;
+  flex-grow: 1;
+  font-size: 28px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 100%;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+}
+.textField {
+  background: rgba(255, 255, 255, 1);
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 8px 16px;
+}
+.textFieldAtom {
+  background: rgba(0, 0, 0, 0.03999999910593033);
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: row;
+  column-gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 16px;
+  padding: 13.5px 13px;
+}
+.text___8YqPs {
+  display: block;
+  flex-grow: 1;
+  font-size: 17px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 1.350000023841858;
+  color: rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.textField2 {
+  background: rgba(255, 255, 255, 1);
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 8px 16px;
+}
+.textFieldAtom2 {
+  background: rgba(0, 0, 0, 0.03999999910593033);
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  column-gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  border-radius: 16px;
+  padding: 13.5px 13px;
+}
+.text__fq5Y {
+  display: block;
+  flex-grow: 1;
+  font-size: 17px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 1.350000023841858;
+  color: rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.dropdown {
+  background: rgba(255, 255, 255, 1);
+  height: 60px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: row;
+  column-gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  padding: 8px 16px;
+}
+.dropdown2 {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.11999999731779099);
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  flex-direction: row;
+  column-gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 56px;
+  padding: 10.5px 16px;
+}
+.text__six4T {
+  display: block;
+  flex-grow: 1;
+  font-size: 17px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 1.350000023841858;
+  color: rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.svg__uy1O {
+  object-fit: cover;
+  max-width: 100%;
+  color: #000;
+  width: 18px;
+  height: 18px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.dropdown3 {
+  background: rgba(255, 255, 255, 1);
+  height: 60px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: row;
+  column-gap: 12px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  padding: 8px 16px;
+}
+.dropdown4 {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.11999999731779099);
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  flex-direction: row;
+  column-gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 56px;
+  padding: 10.5px 16px;
+}
+.text___4Ncdh {
+  display: block;
+  flex-grow: 1;
+  font-size: 17px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 1.350000023841858;
+  color: rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.svg__zSQq8 {
+  object-fit: cover;
+  max-width: 100%;
+  color: #000;
+  width: 18px;
+  height: 18px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.frame2 {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.textField3 {
+  background: rgba(255, 255, 255, 1);
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 8px 16px;
+}
+.textFieldAtom3 {
+  background: rgba(0, 0, 0, 0.03999999910593033);
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: row;
+  column-gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 16px;
+  padding: 13.5px 13px;
+}
+.text___1Kj6S {
+  display: block;
+  flex-grow: 1;
+  font-size: 17px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 1.350000023841858;
+  color: rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.textField4 {
+  background: rgba(255, 255, 255, 1);
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 8px 16px;
+}
+.textFieldAtom4 {
+  background: rgba(0, 0, 0, 0.03999999910593033);
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: row;
+  column-gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 16px;
+  padding: 13.5px 13px;
+}
+.text__kaern {
+  display: block;
+  flex-grow: 1;
+  font-size: 17px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 1.350000023841858;
+  color: rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.textField5 {
+  background: rgba(255, 255, 255, 1);
+  height: 93px;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  padding: 8px 16px;
+}
+.addItemButton {
+  background: rgba(255, 0, 0, 1);
+  width: 200px;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  column-gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  border-radius: 16px;
+  padding: 13.5px 13px;
+}
+.textButton {
+  display: block;
+  flex-grow: 1;
+  font-size: 17px;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 1.350000023841858;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+}
+.cancelItemButton {
+  background: rgba(255, 223, 223, 1);
+  width: 200px;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  column-gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  border-radius: 16px;
+  padding: 13.5px 13px;
+}
+.textButton2 {
+  display: block;
+  flex-grow: 1;
+  font-size: 17px;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 1.350000023841858;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+}
